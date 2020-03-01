@@ -2,7 +2,7 @@
 layout: post
 title:  "各种代理設置"
 date:   2020-03-01 22:37:59 +0800
-tag: [git, npm]
+tag: [proxy, git, npm]
 ---
 
 搭建这个Jekyll博客花了一个下午的时间 :sweat_smile:
