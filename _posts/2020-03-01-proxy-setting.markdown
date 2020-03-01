@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "git 代理設置"
-date:   2020-03-01 16:57:59 +0800
-tag: [git]
+title:  "各种代理設置"
+date:   2020-03-01 22:37:59 +0800
+tag: [git, npm]
 ---
 
 搭建这个Jekyll博客花了一个下午的时间 :sweat_smile:
@@ -25,3 +25,18 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 
 {% endhighlight %}
+
+### npm 
+{% highlight console %}
+--查看当前所用的源
+npm config get registry
+
+-- 设置为淘宝源
+npm config set registry http://registry.npm.taobao.org/
+
+-- 设置回官方源(发布自己的包时需先设置回官方源)
+npm config set registry https://registry.npmjs.org/
+
+{% endhighlight %}
+
+[git]: https://gist.github.com/laispace/666dd7b27e9116faece6
