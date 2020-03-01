@@ -34,19 +34,7 @@ plugins:
   - jekyll-feed
   - jemoji
 
-analytics :
-  provider : google
-  gauges :
-      site_id : 'SITE ID'
-  google :
-      tracking_id : 'UA-123456-1'
-  getclicky :
-    site_id :
-  mixpanel :
-      token : '_MIXPANEL_TOKEN_'
-  piwik :
-      baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-      idsite : '1'  
+google_analytics: UA-123456-1
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
