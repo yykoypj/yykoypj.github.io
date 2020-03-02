@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "搜集的博客"
+title:  "搜集的网站"
 date:   2020-03-02 19:39:59 +0800
 tag: [blog]
 ---
@@ -59,6 +59,8 @@ babel [中文文档](https://babel.docschina.org/docs/en/) [英文文档](https:
 [知乎-前端开发](https://www.zhihu.com/topic/19550901/hot)
 
 [git代码提交规范参考](https://github.com/XXHolic/blog/issues/16)
+![git代码提交规范参考](/assets/gitcommit.png)
+
 >不定时更新...
 
 [github-emoji]: https://gist.github.com/rxaviers/7360908
