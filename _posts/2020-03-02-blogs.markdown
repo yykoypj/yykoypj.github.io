@@ -59,6 +59,7 @@ babel [中文文档](https://babel.docschina.org/docs/en/) [英文文档](https:
 [知乎-前端开发](https://www.zhihu.com/topic/19550901/hot)
 
 [git代码提交规范参考](https://github.com/XXHolic/blog/issues/16)
+
 ![git代码提交规范参考](/assets/gitcommit.png)
 
 >不定时更新...
