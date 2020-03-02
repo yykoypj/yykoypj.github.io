@@ -1,0 +1,64 @@
+---
+layout: post
+title:  "搜集的博客"
+date:   2020-03-02 19:39:59 +0800
+tag: [blog]
+---
+
+
+做个码农，不断地学习，不断更新自己的知识库是最最基本的能力和要求
+
+相信大家或多或少会搜集一些要么是牛人大咖写的博客，要么是有用的技术文档，甚至有人会记下许多Stack Overflow上的回答。在这里吐槽一下，medium免费用户何来人权，白嫖党 :lemon: 也很想看的好伐:lemon::lemon:。
+
+本篇博客和第一篇功能一致，主要做备忘和分享用，跟大家分享一些本人喜欢的博客和一些挺有用的网站
+
+### 博客
+[chencheng (云谦) sorrycc](https://github.com/sorrycc/blog/issues?page=2&q=is%3Aissue+is%3Aopen)
+
+![sorrycc](/assets/sorrycc.png)
+
+[Cam Song](https://github.com/camsong/blog)
+
+![camsong](/assets/camsong.png)
+
+[紫云飞](https://www.cnblogs.com/ziyunfei/)
+
+[砖家 brickspert](https://github.com/brickspert/blog)
+
+[朱建的个人博客](https://github.com/laughing-pic-zhu/blog)
+
+[若川的博客-前端视野](https://www.lxchuan12.cn/posts/#%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8)
+
+[airuikun](https://github.com/airuikun/blog)
+
+### 文档
+redux [中文文档](http://cn.redux.js.org/) [英文文档](https://redux.js.org/introduction/getting-started/)
+
+webpack [中文文档](https://webpack.docschina.org/concepts/) [英文文档](https://webpack.js.org/concepts/)
+
+babel [中文文档](https://babel.docschina.org/docs/en/) [英文文档](https://babeljs.io/docs/en/)
+
+[functional programming](https://jigsawye.gitbooks.io/mostly-adequate-guide/ch1.html)(关于函数式编程)
+
+[formily](https://formilyjs.org/)(阿里统一表格解决方案)
+
+[@Umi/hooks](https://hooks.umijs.org/zh-CN/)(实用工具库)
+
+![干他](/assets/ganta.png)
+### 素材
+[react-component系列](https://github.com/react-component)(看源码就选它)
+
+[async-validator](https://github.com/yiminghe/async-validator)(antd表单校验器)
+
+[yiminghe lab](http://yiminghe.me/lab/playground/)
+### 其它
+[木易杨前端进阶](https://muyiy.cn/question/)
+
+[IMWeb前端博客](https://imweb.io/topic/tab/all)
+
+[知乎-前端开发](https://www.zhihu.com/topic/19550901/hot)
+
+[git代码提交规范参考](https://github.com/XXHolic/blog/issues/16)
+>不定时更新...
+
+[github-emoji]: https://gist.github.com/rxaviers/7360908
