@@ -25,6 +25,8 @@ tag: [blog]
 
 [砖家 brickspert](https://github.com/brickspert/blog)
 
+[冴羽](https://github.com/mqyqingfeng/Blog)
+
 [朱建的个人博客](https://github.com/laughing-pic-zhu/blog)
 
 [若川的博客-前端视野](https://www.lxchuan12.cn/posts/#%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8)
