@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "想想怎么模拟实现一个call"
+date:   2020-03-04 23:39:59 +0800
+tag: [javascript, call]
+---
+
+call函数的作用是为函数提供一个绑定this值，并提供后续的若干参数，从而达到调用该函数的一个方法。
+
+因为很多情况下对象本身并没有包含所需要调用的函数方法，亦或者直接调用无法调用到原型链上已经被覆盖了的方法，这个时候call函数就有了用武之地.
+```javascript
+var a = [1,2];
+Object.prototype.toString.call(a); // "[object Array]"
+Array.prototype.toString.call(a);  // "1,2"
+```
+
+那么要如何模拟实现一个call函数呢?
+
+```javascript
+function a (){console.log(this.valu)};
+var b = {c:1};
+a.call(b); // {c:1}
+```
+
+1. 首先可以看到call函数是所有Function的一个属性函数,所以应该是
+   ```javascript
+    Function.prototype.mycall = (.....)
+   ```
+2. 然后试着解决this的问题
+   ```javascript
+    Function.prototype.mycall = function(context){
+      //首先在这里通过this获取需要调用的函数
+      var fn = this;
+      //使用context调用这个函数
+      context.fn = fn;
+      context.fn();
+      delete context.fn;
+    }
+   ```
+3. 解决函数传参的问题
+   ```javascript
+    Function.prototype.mycall = function(...props){
+      //利用一下ES6的特性
+      var context = props[0];
+      context.fn = this;
+      context.fn(...props.slice(1));
+      delete context.fn;
+    }
+   ```
+4. 如果传入的context本身就有fn属性怎么办
+   ```javascript
+    Function.prototype.mycall = function(...props){
+      //利用一下ES6的特性
+      var context = props[0];
+      var fn = Symbol('fn');
+
+      context[fn] = this;
+      context[fn](...props.slice(1));
+      delete context[fn];
+    }
+   ```
+5. 调用的函数带返回值
+   ```javascript
+    Function.prototype.mycall = function(...props){
+      var context = props[0];
+      var fn = Symbol('fn');
+
+      context[fn] = this;
+      var result = context[fn](...props.slice(1));
+      delete context[fn];
+      return result;
+    }
+   ```
+6. 调用的时候不给context需要默认为window
+   ```javascript
+    Function.prototype.mycall = function(...props){
+      var context = props[0] || window;
+      var fn = Symbol('fn');
+
+      context[fn] = this;
+      var result = context[fn](...props.slice(1));
+      delete context[fn];
+      return result;
+    }
+   ```
+7. 不给用ES6特性怎么办
+   ```javascript
+    Function.prototype.mycall = function(context){
+      context = context || window;
+      var id = 0;
+      while ( context[ id ] ) {
+        id ++;
+      }
+      context[ id ] = this;
+
+      var args = [];
+      for(var i = 1, len = arguments.length; i < len; i++) {
+          args.push('arguments[' + i + ']');
+      }
+      var result = eval('context.fn(' + args +')');
+      
+      delete context[fn];
+      return result;
+    }
+   ```
