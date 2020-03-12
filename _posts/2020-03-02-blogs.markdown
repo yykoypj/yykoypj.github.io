@@ -21,6 +21,8 @@ tag: [blog]
 
 ![camsong](/assets/camsong.png)
 
+[冴羽](https://github.com/mqyqingfeng/Blog)
+
 [紫云飞](https://www.cnblogs.com/ziyunfei/)
 
 [砖家 brickspert](https://github.com/brickspert/blog)
@@ -53,6 +55,13 @@ babel [中文文档](https://babel.docschina.org/docs/en/) [英文文档](https:
 [async-validator](https://github.com/yiminghe/async-validator)(antd表单校验器)
 
 [yiminghe lab](http://yiminghe.me/lab/playground/)
+
+### 后端
+
+[egg.js](https://eggjs.org/zh-cn/intro/index.html) 阿里开源的企业级Node.js 框架
+
+[awesome-egg](https://github.com/eggjs/awesome-egg) 开发egg的优秀资源合集
+
 ### 其它
 [木易杨前端进阶](https://muyiy.cn/question/)
 
